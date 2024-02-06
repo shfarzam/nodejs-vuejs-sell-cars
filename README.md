@@ -57,13 +57,31 @@ Follow the steps below to set up and run the project:
 
 
 ## Endpoints
-### GET /api/customers
-- Description: Retrieves a list of customers.
-- Example: `curl http://localhost:3000/api/customers`
+// Backend Endpoints
 
-### POST /api/customers
-- Description: Creates a new customer.
-- Example: `curl -X POST -H "Content-Type: application/json" -d '{"name": "John Doe"}' http://localhost:3000/api/customers`
+## Authentication Routes
+- **POST /login**: Endpoint for user login.
+
+## User Info
+- **GET /user/:email**: Endpoint to retrieve user information based on email.
+
+## Customer Routes
+- **GET /customers**: Retrieve all customers.
+- **GET /customers/:id**: Retrieve a specific customer by ID.
+- **POST /customers**: Create a new customer.
+- **PUT /customers/:id**: Update an existing customer.
+- **DELETE /customers/:id**: Delete a customer.
+
+## Customer Upload Routes
+- **POST /upload/customers**: Upload a CSV file containing customer data.
+- **POST /upload/contactPersons**: Upload a CSV file containing contact person data.
+- **POST /upload/addresses**: Upload a CSV file containing address data.
+
+## Error Handling
+- **404 Not Found**: Handle requests for non-existent routes.
+
+---
+Note: Ensure proper authentication (JWT token) for accessing authenticated endpoints.
 
 ## Contributing
 
