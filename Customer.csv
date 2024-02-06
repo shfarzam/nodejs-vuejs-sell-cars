@@ -1,0 +1,5 @@
+A,B,C,D,E,F,G,H,I,J,K,L,M,N,O
+C-00001,PRIVATE,John,Doe,john.doe@email.com,1234567890,1990-01-01,,,New York,10001,,,123 Main St,john.doe@email.com
+C-00002,COMPANY,Jane,Smith,jane.smith@email.com,9876543210,1985-05-15,ABC Inc,USA,San Francisco,94105,1234567890,9876543210,456 Oak St,jane.smith@email.com
+C-00003,PRIVATE,Max,Mustermann,max_mustermann@gmail.com,00491771484582,1992-02-02,,,Pentling,93080,,00491771484583,00491771484584,Max-Planck-Strasse 54,SellCars@gmail.com
+C-00004,COMPANY,Lisa,Luisiana,lisa_luisiana@gmail.com,00491771484585,1990-05-15,Aldi,Germany,Regensburg,93081,00491771484586,00491771484587,Lidl,00491771484588,Lidl-Strasse 123,lidl@gmail.com
