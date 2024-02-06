@@ -13,12 +13,14 @@ This assignment consists of a frontend and backend project aimed at
 - Frontend: 
 
 ## Backend Setup
-1. Navigate to the backend directory.
-2. Run `npm start` to start the backend server.
+1. Navigate to the backend directory. [ cd backend ]
+2. Run `npm start` to start the backend server. 
+   This will start the backend server and it will be accessible at the configured port.
 
 ## Frontend Setup
 1. Navigate to the frontend directory.
 2. Run `npm dev` to start the frontend server.
+   This will start the development server and you can access the project at http://localhost:8080.
 
 ## Usage
 
