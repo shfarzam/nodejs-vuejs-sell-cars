@@ -34,7 +34,7 @@ Follow the steps below to set up and run the project:
    - Navigate to the frontend directory.
    - Install dependencies using `npm install`.
    - Configure API endpoint URLs if required.
-   - Start the frontend development server using `npm run serve`.
+   - Start the frontend development server using `npm run dev`.
 
 4. **Accessing the Application**:
    - Once both backend and frontend servers are running, access the application by visiting the specified URL in your web browser.
