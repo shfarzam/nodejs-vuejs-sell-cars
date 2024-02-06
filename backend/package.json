@@ -1,0 +1,28 @@
+{
+  "name": "sell-cars",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "seed-user": "node app/database/seeds/userSeeder.js",
+    "start": "node app/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Shahriar Farzam",
+  "license": "ISC",
+  "description": "Customer Module",
+  "dependencies": {
+    "axios": "^1.6.7",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "csv-parser": "^3.0.0",
+    "dotenv": "^16.4.1",
+    "email-validator": "^2.0.4",
+    "express": "^4.18.2",
+    "fs": "^0.0.1-security",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.3.0",
+    "mongoose": "^8.1.1",
+    "multer": "^1.4.5-lts.1"
+  }
+}
