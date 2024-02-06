@@ -1,0 +1,43 @@
+version: '3'
+services:
+  # MongoDB Service
+  mongo:
+    container_name: mongo
+    image: mongo
+    env_file: ./.env
+    ports:
+      - "${MONGODB_LOCAL_PORT}:${MONGODB_DOCKER_PORT}"
+    volumes:
+      - ./data:/data/db
+
+  mongo-express:
+    container_name: mongo-express
+    image: mongo-express
+    restart: always
+    ports:
+      - '8083:8081'
+
+  # Backend Service
+  backend:
+    build:
+      context: ./backend
+    #restart: unless-stopped
+    env_file: ./.env
+    ports:
+      - "${BACKEND_PORT:-3000}:${BACKEND_PORT:-3000}"
+    depends_on:
+      - mongo
+    environment:
+      MONGO_URI: "${MONGODB_URI}"
+
+  # Frontend Service
+  frontend:
+    build:
+      context: ./frontend
+    env_file: ./.env
+    ports:
+      - "${PORT}:${PORT}"
+    depends_on:
+      - backend
+    environment:
+      API_URL: "${VUE_APP_API_BASE_URL}"
