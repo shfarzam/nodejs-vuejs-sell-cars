@@ -1,0 +1,71 @@
+/* LoginStyles.css */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    /* Light gray background */
+}
+
+.login-card {
+    width: 100%;
+    max-width: 500px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #cdcdcd;
+    /* White card background */
+}
+
+.login-form {
+    width: 100%;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+}
+
+.input-field {
+    float: right;
+    width: 90%;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.submit-btn {
+    float: right;
+    width: 50%;
+    padding: 1rem;
+    background-color: #3498db;
+    /* Blue button color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.error-message {
+    color: #e74c3c;
+    /* Red error message */
+}
+
+/* Add responsive styles */
+@media screen and (max-width: 600px) {
+    .login-card {
+        max-width: 100%;
+    }
+
+    .input-group {
+        margin-bottom: 1rem;
+    }
+}

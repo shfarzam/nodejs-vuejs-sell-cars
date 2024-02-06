@@ -1,0 +1,11 @@
+# .dockerignore for Vue.js project
+
+# Ignore node_modules directory (dependencies will be installed inside the Docker container)
+node_modules/
+
+# Ignore build artifacts and temporary files
+/dist/
+/.env*
+/.git/
+/node_modules/
+/public/
